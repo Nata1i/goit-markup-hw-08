@@ -1,0 +1,46 @@
+.team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: var(--fourth-background-color);
+  }
+  .team__item {
+    width: 270px; 
+    box-shadow: 0px 1px 3px var(--first-shadow-color), 0px 1px 1px var(--second-shadow-color), 0px 2px 1px var(--third-shadow-color);
+    border-radius: 0px 0px 4px 4px;
+
+    .team__list &:not(:last-child){
+      margin-right: 30px;
+    }
+  }
+  
+  .team__list {
+    display: flex;
+  }
+  
+
+  
+  .team__after-title {
+    margin-bottom: 10px;
+  
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+  .team__card-text {
+    margin-bottom: 16px;
+  
+    line-height: 1.19;
+    text-align: center;
+  }
+  
+  .team__members-box {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 32px;
+    padding-right: 32px;
+  
+    background-color: var(--first-background-color);
+    
+  }

@@ -1,0 +1,38 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    color: #212121;
+  }
+  .btn {
+    cursor: pointer;
+    border: 1px solid transparent;
+  }
+  .list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  h1, h2, h3, h4, h5, h6, p {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .link {
+    text-decoration: none;
+  }
+  
+  .img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }

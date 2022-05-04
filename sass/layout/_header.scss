@@ -1,0 +1,106 @@
+  .header {
+    padding-top: 0;
+    padding-bottom: 0;
+   
+    background-color: var(--first-background-color);
+    border-bottom: 1px solid var(--first-line-color);
+  }
+  
+  .header__logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    color: var(--second-header-color);
+  }
+  
+  .header__nav {
+    margin-left: 93px;
+  }
+  .header__list {
+    display: flex;
+  }
+   .header__list .header__item:not(:last-child){
+    margin-right: 50px;
+  }
+  .header__link {
+    transition: color 250ms var(--timing-function);
+    position: relative;
+  
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: inherit;
+
+    &.header__link_current {
+      color: var(--accent-color); 
+    }
+    
+    &.header__link_current::after {
+      transform: translateY(1px);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      content: "";
+      
+      border-radius: 2px;
+      width: 100%;
+      height: 4px;
+      background-color: var(--accent-color);
+    
+    }
+    
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+  
+  .header__contacts {
+    display: flex;
+    margin-left: auto;
+  }
+  .header__contacts .header__contacts-item:not(:last-child){
+    margin-right: 50px;
+  }
+  
+  .header__contacts-link {
+    display: flex;
+    align-items: center;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  
+  .header__contacts-mail,
+  .header__contacts-phone{
+    transition: color 250ms var(--timing-function);
+  
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--third-header-color);
+
+    .header__contacts-link:hover &,
+    .header__contacts-link:focus & {
+      color: var(--accent-color);
+    }
+  }
+  
+  .header__contacts-icon {
+    transition: fill 250ms var(--timing-function);
+  
+    fill: var(--third-header-color);
+
+    margin-right: 10px;
+
+    .header__contacts-link:hover &,
+    .header__contacts-link:focus & {
+      fill: var(--accent-color);
+    }
+  }
+  

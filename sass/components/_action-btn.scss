@@ -1,0 +1,20 @@
+.action-btn {
+    transition: scale 250ms var(--timing-function);
+  
+    min-width: 200px;
+  
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--second-page-color);
+    background: var(--accent-color);
+    box-shadow: 0px 4px 4px var(--btn-shadow-color);
+    border-radius: 4px;
+
+    &:active  {
+      transform: scale(0.95); 
+    }
+  }
+  

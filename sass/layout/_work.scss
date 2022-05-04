@@ -1,0 +1,41 @@
+  .work {
+    padding-bottom: 94px;
+  
+    background-color: var(--first-background-color);
+  }
+  .work__item {
+    position: relative;
+  
+    width: 370px; 
+
+    .work__list &:not(:last-child){
+      margin-right: 30px;
+    }
+  }
+  
+  .work__after-title-div {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+  
+    padding: 27px 82px;
+  
+    background: var(--third-overlay-color);
+  }
+  
+  .work__after-title {  
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  
+  color: var(--second-page-color);
+  }
+  
+  .work__list {
+    display: flex;
+  }
+  

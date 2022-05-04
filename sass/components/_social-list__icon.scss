@@ -1,0 +1,11 @@
+.social-list__icon {
+  transition: fill 250ms var(--timing-function);
+
+  fill: var(--first-icon-color);
+  
+  .social-list__link:hover &,
+  .social-list__link:focus & {
+      fill: var(--second-accent-color);
+}
+}
+
