@@ -32,7 +32,7 @@
         <ul class="list header__contacts">
             <li class="header__contacts-item">
                 <a class="link header__contacts-link" href="mailto:info@devstudio.com">
-                <svg class="header__contacts-icon"
+                <svg class="header__contacts-mail-icon"
                     width="16px"
                     height="12px">
                     <use href="./images/icons.svg.svg#icon-envelope"></use>
@@ -43,7 +43,7 @@
             </li> 
             <li  class="header__contacts-item" >
                 <a class="link header__contacts-link" href="tel:+380961111111">
-                <svg class="header__contacts-icon"
+                <svg class="header__contacts-phone-icon"
                 width="10px" 
                 height="16px">
                 <use href="./images/icons.svg.svg#icon-smartphone"></use>
@@ -64,22 +64,58 @@
     </div>
     <div class="mobile-menu" data-menu>
         <div class="container mobile-menu__container">
-            <button type="button" class="btn mobile-menu_close-btn" data-menu-close>
-                <svg class="mobile-menu_close-btn-icon" 
+            <button type="button" class="btn mobile-menu__close-btn" data-menu-close>
+                <svg class="mobile-menu__close-btn-icon" 
                      width="40"             
                      height="40">
                     <use href="./images/icons.svg.svg#mobile-close-menu-icon"></use>
                 </svg>
             </button>
-            <ul class="list">
-                <li>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, veritatis nulla reprehenderit, corporis error rerum mollitia porro, tempore cumque quibusdam fugiat illum quasi sapiente nihil iste quos natus sint optio.</p>
+            <nav class="list mobile-menu__nav">
+                <li class="mobile-menu__item">
+                    <a href="" class="link mobile-menu__link">
+                        Студия
+                    </a>
                 </li>
-                <li>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, veritatis nulla reprehenderit, corporis error rerum mollitia porro, tempore cumque quibusdam fugiat illum quasi sapiente nihil iste quos natus sint optio.</p>
+                <li class="mobile-menu__item">
+                    <a href="" class="link mobile-menu__link">
+                        Портфолио
+                    </a>
                 </li>
-                <li>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, veritatis nulla reprehenderit, corporis error rerum mollitia porro, tempore cumque quibusdam fugiat illum quasi sapiente nihil iste quos natus sint optio.</p>
+                <li class="mobile-menu__item">
+                    <a href="" class="link mobile-menu__link">
+                        Контакты
+                    </a>
+                </li>
+            </nav>
+            <ul class="list mobile-menu__contacts">
+                <li class="mobile-menu__contacts-item">
+                    <a href="tel:+380961111111" class="link mobile-menu__phone">+38 096 111 11 11</a>
+                </li>
+                <li class="mobile-menu__contacts-item">
+                    <a href="mailto:info@devstudio.com" class="link mobile-menu__mail">info@devstudio.com</a>
+                </li>
+            </ul>
+            <ul class="list mobile-menu__socials">
+                <li class="mobile-menu__socials-item">
+                    <a href="" class="link mobile-menu__socials-link">
+                        Instagram
+                    </a>
+                </li>
+                <li class="mobile-menu__socials-item">
+                    <a href="" class="link mobile-menu__socials-link">
+                        Twitter
+                    </a>
+                </li>
+                <li class="mobile-menu__socials-item">
+                    <a href="" class="link mobile-menu__socials-link">
+                        Facebook
+                    </a>
+                </li>
+                <li class="mobile-menu__socials-item">
+                    <a href="" class="link mobile-menu__socials-link">
+                        LinkedIn
+                    </a>
                 </li>
             </ul>
         </div>
@@ -538,7 +574,7 @@
         </div>
     </div>
     <script src="./js/modal.js"></script> -->
-    <script src="./js/menu.js"></script> -->
+    <script src="./js/menu.js"></script> 
     
 </body>
 </html>
