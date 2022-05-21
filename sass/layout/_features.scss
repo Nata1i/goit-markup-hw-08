@@ -92,7 +92,10 @@
 }
 
 .features__item {
-    margin-bottom: 30px;
+    @media screen and (max-width:767px) {
+      .features__list &:not(:last-child){
+        margin-bottom: 30px;}
+    }
     @media screen and (min-width:768px) {
       max-width: 354px;
       flex-basis: calc(100% / 2 - 30px);
