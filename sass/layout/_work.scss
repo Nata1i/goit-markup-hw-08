@@ -1,11 +1,11 @@
-@media screen and (max-width:1199px) {
+
   .work{
   display: none; 
-}
-}
+  }
 
 @media screen and (min-width:1200px) {
   .work {
+    display: block;
     padding-bottom: 94px;
   
     background-color: var(--first-background-color);
