@@ -56,8 +56,11 @@
   }
 
 .features__box {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 25px;
+    padding-top: 25px;
     margin-bottom: 30px;
-    padding: 25px 190px;
     border-radius: 4px;
 
     background: var(--fourth-background-color);

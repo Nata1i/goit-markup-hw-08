@@ -555,8 +555,11 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .features__box {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 25px;
+  padding-top: 25px;
   margin-bottom: 30px;
-  padding: 25px 190px;
   border-radius: 4px;
   background: var(--fourth-background-color);
 }
@@ -722,7 +725,7 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .team__item {
     max-width: 354px;
     margin-top: 30px;
@@ -734,6 +737,9 @@ h1, h2, h3, h4, h5, h6, p {
 @media screen and (min-width: 1200px) {
   .team__item {
     max-width: 270px;
+    margin-top: 0;
+    margin-left: 0;
+    flex-basis: none;
   }
   .team__list .team__item:not(:last-child) {
     margin-right: 30px;
@@ -779,13 +785,26 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--first-background-color);
 }
 
 .clients__list {
   display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 767px) {
+  .clients__list-item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  .clients__list-item:nth-child(2n-1) {
+    margin-right: 30px;
+  }
+  .clients__list-item:not(:nth-last-child(-n+2)) {
+    margin-bottom: 30px;
+  }
 }
 
 .clients__list-link {
@@ -795,25 +814,21 @@ h1, h2, h3, h4, h5, h6, p {
   justify-content: center;
   border: 1px solid var(--first-icon-color);
   border-radius: 4px;
-  width: 170px;
   height: 92px;
+  max-width: 100%;
 }
 
 .clients__list-link:hover, .clients__list-link:focus {
   border-color: var(--accent-color);
 }
 
-.clients__list .clients__list-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.clients__list-icon {
+.clients__list-link .clients__list-icon {
   transition: fill 250ms var(--timing-function);
   fill: var(--first-icon-color);
 }
 
-.clients__list-link:hover .clients__list-icon,
-.clients__list-link:focus .clients__list-icon {
+.clients__list-link:hover .clients__list-link .clients__list-icon,
+.clients__list-link:focus .clients__list-link .clients__list-icon {
   fill: var(--accent-color);
 }
 
