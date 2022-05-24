@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="./css/main.min.css">    
 </head>
 <body>
-    <header class="header">
+     <header class="header">
         <div class="container container_nav_centered">
         <a class="link logo header__logo" href="./index.html"> <span class="logo-secondary">Web</span>Studio</a>
     <nav class="header__nav">
@@ -73,12 +73,12 @@
             </button>
             <nav class="list mobile-menu__nav">
                 <li class="mobile-menu__item">
-                    <a href="" class="link mobile-menu__link">
+                    <a href="./index.html" class="link mobile-menu__link header__link_current">
                         Студия
                     </a>
                 </li>
                 <li class="mobile-menu__item">
-                    <a href="" class="link mobile-menu__link">
+                    <a href="./portfolio.html" class="link mobile-menu__link">
                         Портфолио
                     </a>
                 </li>
@@ -120,7 +120,7 @@
             </ul>
         </div>
     </div>
-</header>
+</header> 
     <main>
         <!-- Герой -->
          <section class="hero">
@@ -248,7 +248,7 @@
                             media="(min-width: 768px)" />
 
                         <source srcset="./images/our-team1-mob.jpg 1x, ./images/our-team1-mob@2x.jpg 2x"
-                            media="(max-width: 767px)" />
+                            media="(max-width: 767.5px)" />
 
                         <img class="img" src="./images/our-team1-desk.jpg" alt="Фото работника - 1"
                              />
@@ -297,7 +297,7 @@
                             media="(min-width: 768px)" />
 
                         <source srcset="./images/our-team2-mob.jpg 1x, ./images/our-team2-mob@2x.jpg 2x"
-                            media="(max-width: 767px)" />
+                            media="(max-width: 767.5px)" />
 
                         <img class="img" src="./images/our-team2-desk.jpg" alt="Фото работника - 2"
                              />
@@ -346,7 +346,7 @@
                         media="(min-width: 768px)" />
 
                     <source srcset="./images/our-team3-mob.jpg 1x, ./images/our-team3-mob@2x.jpg 2x"
-                        media="(max-width: 767px)" />
+                        media="(max-width: 767.5px)" />
 
                     <img class="img" src="./images/our-team3-desk.jpg" alt="Фото работника - 3"
                          />
@@ -395,7 +395,7 @@
                             media="(min-width: 768px)" />
 
                         <source srcset="./images/our-team4-mob.jpg 1x, ./images/our-team4-mob@2x.jpg 2x"
-                            media="(max-width: 767px)" />
+                            media="(max-width: 767.5px)" />
 
                         <img class="img" src="./images/our-team4-desk.jpg" alt="Фото работника - 4"
                          />
@@ -500,13 +500,13 @@
         </div>
         </section>
     </main>
-    <!-- <footer class="footer">
+      <footer class="footer">
     <div class="container">
         <div class="footer__address">
             <div class="footer__address-div">
             <a class="link logo footer__logo" href="./index.html"> <span class="logo-secondary">Web</span>Studio</a>
             <address>
-                <ul class="list">
+                <ul class="list footer__list">
                     <li class="footer__item">
                         <a class="link footer__link" href="https://goo.gl/maps/KCNXTtwUkDuFQo187">г. Киев, пр-т Леси Украинки, 26</a>
                     </li>
@@ -568,9 +568,9 @@
             </div>
         </div>
     </div>
-    </footer> -->
+    </footer>  
 <!-- is-hidden -->
-    <!-- <div class="backdrop backdrop_is_hidden" data-modal>
+   <div class="backdrop backdrop_is_hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal__close-btn" data-modal-close>
                 <svg class="modal__close-icon"
@@ -621,7 +621,7 @@
                 <div class="contact-form__checkbox-wrapper">
                     <input name="accept_policy" type="checkbox" class="contact-form__checkbox visually-hidden " required id="policy-checkbox">
                     <label for="policy-checkbox" class="contact-form__checkbox-label">
-                        Соглашаюсь с рассылкой и принимаю&nbsp;<a class="contact-form__checkbox-link" href="">Условия договора</a>
+                       <span class="contact-form__text-wrapper"> Соглашаюсь с рассылкой и принимаю&nbsp;<a class="contact-form__checkbox-link" href="">Условия договора</a></span>
                     </label>
 
                     <button type="submit" class="btn action-btn contact-form__action-btn">Отправить</button>
@@ -629,7 +629,7 @@
             </form>
         </div>
     </div>
-    <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script> 
     
 </body>

@@ -75,7 +75,7 @@
     max-width: 450px; 
     box-shadow: 0px 1px 3px var(--first-shadow-color), 0px 1px 1px var(--second-shadow-color), 0px 2px 1px var(--third-shadow-color);
     border-radius: 0px 0px 4px 4px;
-    @media screen and (max-width:767px) {
+    @media screen and (max-width:767.5px) {
       .team__list &:not(:last-child){
         margin-bottom: 30px;
       }
@@ -116,11 +116,15 @@
   }
 
     .team__members-box {
-    padding-top: 30px;
-    padding-bottom: 24px;
+      padding-top: 30px;
+      padding-bottom: 24px;
+      padding-left: 32px;
+      padding-right: 32px;
+
+    @media screen and (min-width:480px) {
     padding-left: 122px;
     padding-right: 122px;
-  
+    }    
     background-color: var(--first-background-color);
 
     @media screen and (min-width:768px) {
